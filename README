@@ -1,0 +1,12 @@
+npm i -d typescript @types/node tsx 
+tsup
+
+npx tsc --init
+
+Alterar no tsconfig   "target": "es2016",  para     "target": "es2020",     
+
+npm fastify
+
+npm i @supabase/supabase-js
+
+npm i dontenv
