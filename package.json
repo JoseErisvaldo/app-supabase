@@ -6,11 +6,14 @@
     "node": "18"
   },
   "scripts": {
-  "dev": "node src/server.js",
-  "start": "node src/server.js",
-  "build": "echo 'No build step required for JavaScript.'"
-}
-,
+    "dev": "node src/server.js",
+    "start": "node src/server.js",
+    "build": "echo 'No build step required for JavaScript.'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "dependencies": {
     "@supabase/supabase-js": "^2.45.1",
     "dotenv": "^16.4.5",
