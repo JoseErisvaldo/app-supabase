@@ -2,10 +2,12 @@
   "name": "app-supabase",
   "version": "1.0.0",
   "main": "index.js",
-  "engine": {"node": "18"},
+  "engine": {
+    "node": "18"
+  },
   "scripts": {
     "dev": "tsx  src/server.ts",
-    "start":"node sidt/servet.ts",
+    "start": "node sidt/servet.ts",
     "build": "tsup src"
   },
   "keywords": [],
@@ -17,8 +19,10 @@
     "@types/node": "^22.4.1",
     "dotenv": "^16.4.5",
     "fastify": "^4.28.1",
-    "tsup": "^8.2.4",
     "tsx": "^4.17.0",
     "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "tsup": "^8.2.4"
   }
 }
