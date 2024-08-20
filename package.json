@@ -5,11 +5,11 @@
   "engine": {
     "node": "18"
   },
-"scripts": {
-  "dev": "tsx src/server.ts",
-  "start": "node dist/server.js",
-  "build": "npx tsup src"
-},
+  "scripts": {
+    "dev": "tsx src/server.ts",
+    "start": "node dist/server.js",
+    "build": "npx tsup src"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
