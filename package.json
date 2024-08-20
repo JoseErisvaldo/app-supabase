@@ -5,7 +5,7 @@
   "engine": {
     "node": "18"
   },
- "scripts": {
+"scripts": {
   "dev": "tsx src/server.ts",
   "start": "node dist/server.js",
   "build": "npx tsup src"
@@ -22,7 +22,7 @@
     "tsx": "^4.17.0"
   },
   "devDependencies": {
-    "tsup": "^5.12.9",
-    "typescript": "^4.9.5"
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4"
   }
 }
