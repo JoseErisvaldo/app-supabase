@@ -1,28 +1,19 @@
 {
   "name": "app-supabase",
   "version": "1.0.0",
-  "main": "dist/server.js",
+  "main": "src/server.js",
   "engine": {
     "node": "18"
   },
   "scripts": {
-    "dev": "tsx src/server.ts",
-    "start": "node dist/server.js",
-    "build": "npx tsup src"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "dev": "node src/server.js",
+  "start": "node src/server.js",
+  "build": "echo 'No build step required for JavaScript.'"
+}
+,
   "dependencies": {
     "@supabase/supabase-js": "^2.45.1",
-    "@types/node": "^22.4.1",
     "dotenv": "^16.4.5",
-    "fastify": "^4.28.1",
-    "tsx": "^4.17.0"
-  },
-  "devDependencies": {
-    "tsup": "^8.2.4",
-    "typescript": "^5.5.4"
+    "fastify": "^4.28.1"
   }
 }

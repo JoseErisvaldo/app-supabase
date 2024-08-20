@@ -1,13 +1,11 @@
-import * as dotenv from 'dotenv';
-dotenv.config();
-
-import { createClient } from '@supabase/supabase-js';
+require('dotenv').config();
+const { createClient } = require('@supabase/supabase-js');
 
 const supaBaseUrl = process.env.SUPABASE_URL || '';
 const supaBaseKey = process.env.SUPABASE_KEY || '';
 
 if (!supaBaseUrl || !supaBaseKey) {
-  throw new Error('As variáveis SUPABASE_URL e SUPABASE_KEY são obrigatórias.');
+  throw new Error('SUPABASE_URL and SUPABASE_KEY environment variables are required.');
 }
 
 const supabase = createClient(supaBaseUrl, supaBaseKey, {
@@ -16,4 +14,4 @@ const supabase = createClient(supaBaseUrl, supaBaseKey, {
   }
 });
 
-export { supabase };
+module.exports = { supabase };
